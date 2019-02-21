@@ -3,9 +3,12 @@ Jason:
 -create variables for everything
 -create html
 -style
+-array
 
 
 Kelly:
 
 -create story/options
--
+-work on input text
+-create html
+-style
