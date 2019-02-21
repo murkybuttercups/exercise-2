@@ -8,5 +8,13 @@ The guards give you the information of the thief who took the sausage: they were
 
 You find yourself in the halfling village, the only place that looks open is the tavern. (kick down the door!) (sneak in the door!)
 
-Good one, everyone turns to look at you. A halfling cloaked in black flees into the back room. (chase the halfling!) (try to sneak around the back)
+Good one, everyone turns to look at you. A halfling cloaked in black flees into the back room. (chase the halfling!) (try to sneak around the back to cut them off)
+
+You encounter the halfling. (strike a cool pose and tell them they're busted) (try to knock them down)
+
+The halfling throws the sausage at you. It hits you in the face and you fall over, and the halfling disappears into the darkness of the magic forest (get up) (inspect the sausage)
+
+You get up and look at the sausage, there's a bite out of it. At least you got it back though! (return home) (take a contemplative walk in the forest)
+
+Welp, looks like the end of our tale. Good job?
 
