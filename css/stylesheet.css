@@ -8,5 +8,22 @@
 
 html, body {
 	height: 100%;
-	margin 0px;
+	width: 900px;
+}
+
+/* main {
+	margin: auto;
+}
+*/
+
+
+.grid-container {
+	display: grid;
+	background-color: orange;
+	grid-template-columns: 1fr, 1fr, 1fr;
+
+	/*max-width: 600px;
+	margin: auto;
+	border: 5 px solid black; */
+	
 }
