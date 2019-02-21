@@ -1,0 +1,11 @@
+Jason:
+
+-create variables for everything
+-create html
+-style
+
+
+Kelly:
+
+-create story/options
+-
