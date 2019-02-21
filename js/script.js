@@ -1,1 +1,6 @@
-console.log("yeehaw");
+// console.log("yeehaw");
+
+window.onload = init;
+function init() {
+
+}
