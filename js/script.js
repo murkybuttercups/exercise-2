@@ -49,6 +49,9 @@ var input2 = ["Wait, what??",
 // variable to increment array position
 var counter = 0;
 
+// declare variable name
+var name;
+
 // call init function
 window.onload = init;
 
@@ -58,11 +61,12 @@ window.onload = init;
 function init() {
 
 	// prompts the user to input their name
-	var name = prompt("What's your name?", "");
+	name = prompt("What's your name?", "");
 
 	console.log(question [counter]);
 	console.log(input1 [counter]);
 	console.log(input2 [counter]);
+
 
 	//if (document.getElementById("input").onclick == true); {
 	//	counter++;
@@ -75,6 +79,9 @@ document.getElementById("input").addEventListener("click", function() {
 	counter++;
 	console.log(counter);
 	if (counter >= 0 && counter <= 8) {
+		console.log(question [counter]);
+		console.log(input1 [counter]);
+		console.log(input2 [counter]);
 		//document.getElementById("question").innerHTML(question [counter]);
 	} else {
 		location.reload(true);
