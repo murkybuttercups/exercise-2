@@ -48,9 +48,9 @@ function init() {
 	// prompts the user to input their name
 	name = prompt("What's your name?", "");
 
-	console.log(question [counter]);
-	console.log(answer1 [counter]);
-	console.log(answer2 [counter]);
+	document.getElementById("question").innerHTML = question [counter];
+	document.getElementById("input1").innerHTML = answer1 [counter];
+	document.getElementById("input2").innerHTML = answer2 [counter];
 };
 
 
@@ -58,16 +58,16 @@ document.onkeypress = function(event) {
 
 	//var keypressed = event.charCode;
 
-	alert("you pressed " + event.charCode)
+	// alert("you pressed " + event.charCode)
 
 	if (event.charCode == 44 || event.charCode == 46) {
 		console.log("you pressed a key!")
 		counter++;
 	console.log(counter);
 	if (counter >= 0 && counter <= 8) {
-		console.log(question [counter]);
-		console.log(answer1 [counter]);
-		console.log(answer2 [counter]);
+		document.getElementById("question").innerHTML = question [counter];
+		document.getElementById("input1").innerHTML = answer1 [counter];
+		document.getElementById("input2").innerHTML = answer2 [counter];
 	} else {
 		location.reload(true);
 	};
