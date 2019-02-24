@@ -53,7 +53,42 @@ function init() {
 	console.log(answer2 [counter]);
 };
 
-document.addEventListener("keydown", pressedkey);
+
+document.onkeypress = function(event) {
+
+	//var keypressed = event.charCode;
+
+	alert("you pressed " + event.charCode)
+
+	if (event.charCode == 44 || event.charCode == 46) {
+		console.log("you pressed a key!")
+		counter++;
+	console.log(counter);
+	if (counter >= 0 && counter <= 8) {
+		console.log(question [counter]);
+		console.log(answer1 [counter]);
+		console.log(answer2 [counter]);
+	} else {
+		location.reload(true);
+	};
+	};
+
+};
+
+// this still doesn't work for input 2 and I'm mad about it
+//document.getElementById("input").addEventListener("click", main);
+
+// document.onkeypress = checkkey;
+
+// function checkkey() {
+
+// 	var key = event.keyCode;
+
+// 	if (key == 37 || key == 39) {
+// 		main;
+// 	};
+
+// };
 
 // function pressedkey() {
 
@@ -65,17 +100,17 @@ document.addEventListener("keydown", pressedkey);
 
 // };
 
-function main() {
-	counter++;
-	console.log(counter);
-	if (counter >= 0 && counter <= 8) {
-		console.log(question [counter]);
-		console.log(answer1 [counter]);
-		console.log(answer2 [counter]);
-	} else {
-		location.reload(true);
-	};
-};
+// function main() {
+// 	counter++;
+// 	console.log(counter);
+// 	if (counter >= 0 && counter <= 8) {
+// 		console.log(question [counter]);
+// 		console.log(answer1 [counter]);
+// 		console.log(answer2 [counter]);
+// 	} else {
+// 		location.reload(true);
+// 	};
+// };
 
 
 // document.addEventListener("click", function(event) {
