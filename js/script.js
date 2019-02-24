@@ -1,7 +1,6 @@
 
-// declare variable name
-var name;
-
+// user name input
+var name = prompt("What's your name?", "Jimothy");
 
 // array to store the content of the prompts
 var question = ["Hi " + name + ", we're going to call ya Joe.",
@@ -46,8 +45,11 @@ window.onload = init;
 function init() {
 
 	// prompts the user to input their name
-	name = prompt("What's your name?", "");
+	
 
+	console.log(name);
+
+	// displays the initial array positions
 	document.getElementById("question").innerHTML = question [counter];
 	document.getElementById("input1").innerHTML = answer1 [counter];
 	document.getElementById("input2").innerHTML = answer2 [counter];
@@ -56,24 +58,32 @@ function init() {
 
 document.onkeypress = function(event) {
 
-	//var keypressed = event.charCode;
-
+	// this is our test for keypresses, it did a good job.
 	// alert("you pressed " + event.charCode)
 
+	// if the user presses < or > the counter increments, going to the next question
 	if (event.charCode == 44 || event.charCode == 46) {
-		console.log("you pressed a key!")
-		counter++;
-	console.log(counter);
-	if (counter >= 0 && counter <= 8) {
-		document.getElementById("question").innerHTML = question [counter];
-		document.getElementById("input1").innerHTML = answer1 [counter];
-		document.getElementById("input2").innerHTML = answer2 [counter];
-	} else {
-		location.reload(true);
-	};
-	};
 
+		// show us the button that was pressed plz
+		// console.log("you pressed a key!")
+		counter++;
+		console.log(question [counter]);
+
+		// if the counter is in the bounds of our array, display the question and answers
+		if (counter >= 0 && counter <= 8) {
+			document.getElementById("question").innerHTML = question [counter];
+			document.getElementById("input1").innerHTML = answer1 [counter];
+			document.getElementById("input2").innerHTML = answer2 [counter];
+			// if the counter is outside the bounds of the array, refresh the page
+		} else {
+			location.reload(true);
+		};
+	};
 };
+
+
+
+// don't judge what's below, we tried a bunch of stuff apparently the hard way ¯\_(ツ)_/¯
 
 // this still doesn't work for input 2 and I'm mad about it
 //document.getElementById("input").addEventListener("click", main);
